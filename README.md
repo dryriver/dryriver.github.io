@@ -2,4 +2,4 @@
 
 This is a Hugo site hosted on GitHub Pages.
 
-Check it out at www.andrearroyo.net
+Check it out at andrearroyo.net
