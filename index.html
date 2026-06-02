@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="André Arroyo — links and web presence">
+  <meta name="referrer" content="no-referrer">
+
+  <!-- Social / Open Graph -->
+  <meta property="og:title" content="André Arroyo">
+  <meta property="og:description" content="André Arroyo — links and web presence">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andrearroyo.net/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Language alternate -->
+  <link rel="alternate" hreflang="es" href="https://andrearroyo.net/es/">
+  <link rel="alternate" hreflang="en" href="https://andrearroyo.net/">
+
+  <title>André Arroyo</title>
+
+  <style>
+    /* =============================================
+       COLOURS — edit here to retheme the site
+       ============================================= */
+    :root {
+      --bg:         #f7f5f0;
+      --text:       #1a1a1a;
+      --link:       #3a3a3a;
+      --link-hover: #000000;
+      --rule:       #1a1a1a;
+      --divider:    #ddd8d0;
+      --muted:      #999999;
+      --bio:        #4a4a4a;
+    }
+    [data-theme="dark"] {
+      --bg:         #181816;
+      --text:       #ede9e2;
+      --link:       #a8b4bc;
+      --link-hover: #ede9e2;
+      --rule:       #ede9e2;
+      --divider:    #2e2e2a;
+      --muted:      #555555;
+      --bio:        #9a9a92;
+    }
+
+    /* =============================================
+       BASE
+       ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+                   Helvetica, Arial, sans-serif;
+      /* Base font size: 18px gives comfortable reading at 100% zoom.
+         clamp ensures it scales down gracefully on small screens. */
+      font-size: clamp(15px, 2vw, 18px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* =============================================
+       LAYOUT
+       ============================================= */
+    .card {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    /* =============================================
+       NAME — edit the text inside <h1> below
+       ============================================= */
+    h1 {
+      font-weight: 500;
+      font-size: clamp(28px, 8vw, 44px);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      white-space: nowrap;
+      color: var(--text);
+    }
+
+    .rule {
+      height: 2px;
+      background: var(--rule);
+      margin: 12px 0 16px;
+      transition: background 0.3s ease;
+    }
+
+    /* =============================================
+       BIO — edit the text inside .bio below
+       ============================================= */
+    .bio {
+      color: var(--bio);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 0.875em; /* relative to body font-size */
+    }
+
+    .bio p {
+      margin-bottom: 0.6em;
+    }
+
+    .bio p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =============================================
+       LINKS — edit href and text in <nav> below
+       ============================================= */
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav a {
+      font-size: 0.9em;
+      font-weight: 400;
+      color: var(--link);
+      text-decoration: none;
+      padding: 8px 0;
+      border-bottom: 0.5px solid var(--divider);
+      transition: color 0.15s ease;
+      line-height: 1.4;
+    }
+
+    nav a:last-child {
+      border-bottom: none;
+    }
+
+    nav a:hover {
+      color: var(--link-hover);
+    }
+
+    /* =============================================
+       FOOTER — language switcher
+       ============================================= */
+    footer {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8em;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    footer a:hover { color: var(--link-hover); }
+
+    footer .active {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    footer .sep { opacity: 0.4; }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+
+    <!-- =============================================
+         NAME — change text here
+         ============================================= -->
+    <h1>André Arroyo</h1>
+
+    <div class="rule"></div>
+
+    <!-- =============================================
+         BIO — each <p> is a separate paragraph/line.
+         Add or remove <p> tags to add or remove lines.
+         ============================================= -->
+    <div class="bio">
+      <p>A multi-lingual IT Team Lead, specialising in Apple support. Certified Kubernetes Administrator.</p>
+      <p>I speak English (native), Spanish (bilingual) and French (bilingual).</p>
+      <p>Dual British / Spanish national and passport holder.</p>
+    </div>
+
+    <!-- =============================================
+         LINKS — change href or link text here
+         ============================================= -->
+    <nav>
+      <a href="https://www.linkedin.com/in/andrearroyo/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+      <a href="https://mastodon.social/@andrearroyo" rel="noopener noreferrer me" target="_blank">Mastodon</a>
+      <a href="https://andrearroyo.wordpress.com/" rel="noopener noreferrer" target="_blank">Spare Cycles — my personal blog</a>
+    </nav>
+
+    <!-- Language switcher -->
+    <footer>
+      <span class="active">English</span>
+      <span class="sep">·</span>
+      <a href="/es/">Español</a>
+    </footer>
+
+  </main>
+
+  <!-- =============================================
+       THEME SCRIPT
+       Dark mode: system preference OR 20:00–07:00 local time.
+       To change the hours, edit DARK_FROM and DARK_TO below.
+       ============================================= -->
+  <script>
+    const DARK_FROM = 20; // 8 PM
+    const DARK_TO   = 7;  // 7 AM
+
+    function shouldBeDark() {
+      const hour = new Date().getHours();
+      const timeBasedDark = hour >= DARK_FROM || hour < DARK_TO;
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      return timeBasedDark || systemDark;
+    }
+
+    function applyTheme() {
+      document.documentElement.setAttribute(
+        'data-theme',
+        shouldBeDark() ? 'dark' : 'light'
+      );
+    }
+
+    applyTheme();
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
+  </script>
+
+</body>
+</html>
