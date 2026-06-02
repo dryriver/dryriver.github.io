@@ -85,11 +85,15 @@
        ============================================= */
     h1 {
       font-weight: 500;
-      font-size: clamp(28px, 8vw, 44px);
+      font-size: clamp(26px, 7vw, 44px);
       letter-spacing: -0.03em;
       line-height: 1.05;
-      white-space: nowrap;
       color: var(--text);
+    }
+
+    /* Name stays on one line only when viewport is wide enough */
+    @media (min-width: 480px) {
+      h1 { white-space: nowrap; }
     }
 
     .rule {
